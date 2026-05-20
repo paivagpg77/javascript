@@ -1,0 +1,108 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: #eef2f3;
+    color: #2c3e50;
+    padding: 20px;
+}
+
+h1 { margin-bottom: 5px; }
+p { margin-bottom: 30px; color: #7f8c8d; }
+
+.layout {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 750px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+/* Área do Input */
+.area-digitacao {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+}
+
+.area-digitacao label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+#campo-texto {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #bdc3c7;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+#campo-texto:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.contador {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #34495e;
+}
+
+#total-caracteres { font-weight: bold; color: #3498db; }
+
+#alerta-sistema {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #7f8c8d;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* Painel Lateral */
+.painel-status {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    width: 240px;
+    text-align: left;
+}
+
+.painel-status h3 { margin-top: 0; margin-bottom: 15px; font-size: 16px; border-bottom: 2px solid #ecf0f1; padding-bottom: 8px;}
+
+.luz-indicadora {
+    background-color: #ecf0f1;
+    color: #7f8c8d;
+    padding: 6px 12px;
+    margin-bottom: 6px;
+    border-radius: 6px;
+    font-family: monospace;
+    font-size: 12px;
+    font-weight: bold;
+    transition: all 0.1s ease;
+}
+
+.luz-indicadora.ativa-laranja { background-color: #e67e22; color: white; }
+.luz-indicadora.ativa-roxa { background-color: #9b59b6; color: white; }
+
+.dados-tecla {
+    margin-top: 25px;
+    background: #f8f9fa;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #e1e8ed;
+}
+
+.dados-tecla h4 { margin-top: 0; margin-bottom: 10px; font-size: 14px; color: #34495e; }
+.dados-tecla p { margin: 5px 0; font-size: 12px; color: #2c3e50; text-align: left;}
+.dados-tecla span { font-family: monospace; font-weight: bold; color: #e74c3c; background: #eaeaea; padding: 2px 4px; border-radius: 4px;}

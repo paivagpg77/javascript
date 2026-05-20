@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratório de Eventos de Teclado</title>
+    <link rel="stylesheet" href="eventoTeclado.css">
+</head>
+<body>
+
+    <h1>Laboratório do Teclado ⌨️</h1>
+    <p>Digite no campo abaixo para testar os eventos e ver os bastidores do teclado.</p>
+
+    <div class="layout">
+        <div class="area-digitacao">
+            <label for="campo-texto">Digite algo (Números são bloqueados aqui):</label>
+            <input type="text" id="campo-texto" placeholder="Comece a digitar..." autocomplete="off">
+            
+            <div class="contador">
+                Caracteres digitados: <span id="total-caracteres">0</span>
+            </div>
+            
+            <div id="alerta-sistema">Status: Aguardando digitação...</div>
+        </div>
+
+        <div class="painel-status">
+            <h3>Monitores de Eventos</h3>
+            <div class="luz-indicadora" id="ind-keydown">keydown</div>
+            <div class="luz-indicadora" id="ind-keyup">keyup</div>
+            
+            <div class="dados-tecla">
+                <h4>Última Tecla Lida:</h4>
+                <p>Propriedade <strong>.key</strong>: <span id="dado-key">-</span></p>
+                <p>Propriedade <strong>.code</strong>: <span id="dado-code">-</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="eventoTeclado.js"></script>
+</body>
+</html>
